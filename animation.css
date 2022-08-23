@@ -1,0 +1,94 @@
+body {
+    margin:8px;
+    padding: 10px;
+}
+
+.starship {
+    width: 350px;
+}
+
+@keyframes move-box {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+
+/* good when we had a single box/div */
+/* div {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    animation-name: move-box;
+    animation-duration: 3s;
+} */
+
+.move-box {
+    position:relative;
+    animation-name: move-box;
+    animation-duration: 10s;
+    height: 100px;
+    width: 100px;  
+    margin: 5px;  
+    padding: 8px;
+}
+
+@keyframes backgroundbox {
+    from{
+        background-color: yellow;
+    }
+    to {
+        background-color: blue;
+    }
+    
+}
+
+.background-box {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    animation-name: backgroundbox;
+    animation-duration: 10s;
+    margin: 5px;  
+    padding: 8px;
+}
+
+/* @keyframes grow-box {
+    0% {
+        background-color: grey; height: 100px; width: 100px; left: 200px; top:200px;
+    }
+    50% {
+        background-color: beige; height: 200px; width: 200px; left: 500px; top: 500px;
+    }
+    100% {
+        background-color: skyblue; height: 500px; width:500px; left: 200px; top: 500px;
+    }
+}
+
+.grow-box {
+    position: relative;
+    animation-name: grow-box;
+    animation-duration: 12s;
+    margin: 5px;  
+    padding: 8px;
+} */
+
+@keyframes bounce-ball {
+    0% {left:0px; top:0px}
+    50% {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+    
+.ball{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: bounce-ball;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
